@@ -37,14 +37,15 @@ const server = http.createServer((req, res) => {
   fs.readFile(filePath, (err, content) => {
     if (err) {
       if(err.code === 'ENOENT') {
-        // File not found - try to serve index.html for SPA routing
-        fs.readFile('./index.html', (error, indexContent) => {
+        // File not found - serve 404 page
+        fs.readFile('./404.html', (error, notFoundContent) => {
           if (error) {
-            res.writeHead(404);
-            res.end('File not found');
+            // If 404 page also not found, send basic 404 response
+            res.writeHead(404, { 'Content-Type': 'text/html' });
+            res.end('<html><body><h1>404 - Page Not Found</h1><p>The requested page could not be found.</p><a href="/">Go Home</a></body></html>');
           } else {
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(indexContent, 'utf-8');
+            res.writeHead(404, { 'Content-Type': 'text/html' });
+            res.end(notFoundContent, 'utf-8');
           }
         });
       } else {

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Sadineni Lahari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        secondary: '#34495E',
+                        accent: '#E74C3C',
+                        highlight: '#3498DB',
+                        light: '#ECF0F1',
+                        dark: '#2C3E50'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'display': ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #3498DB 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-primary font-display">LAHARI</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">HOME</a>
+                    <a href="education.html" class="text-gray-700 hover:text-accent transition-colors font-medium">EDUCATION</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-accent transition-colors font-medium">PROJECTS</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-accent transition-colors font-medium">SKILLS</a>
+                    <a href="certifications.html" class="text-accent font-medium">CERTIFICATIONS</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CONTACT</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">HOME</a>
+                    <a href="education.html" class="text-gray-700 hover:text-accent transition-colors font-medium">EDUCATION</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-accent transition-colors font-medium">PROJECTS</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-accent transition-colors font-medium">SKILLS</a>
+                    <a href="certifications.html" class="text-accent font-medium">CERTIFICATIONS</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="gradient-bg text-white pt-20 pb-16">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 font-display tracking-tight">
+                    CERTIFICATIONS
+                </h1>
+                <p class="text-xl text-light max-w-3xl mx-auto">
+                    Professional certifications and achievements that validate expertise and continuous learning.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <!-- Programming & Development -->
+            <div class="mb-16">
+                                    <h2 class="text-3xl font-bold text-center text-primary mb-12 font-display">PROGRAMMING & DEVELOPMENT</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-highlight">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-highlight mr-4"></i>
+                                <div>
+                                                                 <h3 class="text-lg font-bold text-primary font-medium">DATA STRUCTURES IN C</h3>
+                             <p class="text-secondary text-sm font-medium">Coursera, GreatLearning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm font-medium mb-4">
+                            Comprehensive understanding of data structures and algorithms implementation in C programming language.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-highlight text-white px-3 py-1 rounded-full text-xs font-medium">COMPLETED</span>
+                                                    </div>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-accent">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-accent mr-4"></i>
+                                <div>
+                                                                 <h3 class="text-lg font-bold text-primary font-medium">PROGRAMMING IN PYTHON</h3>
+                             <p class="text-secondary text-sm font-medium">SWAYAM NPTEL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm font-medium mb-4">
+                            Advanced Python programming concepts, object-oriented programming, and best practices.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-xs font-medium">COMPLETED</span>
+                                                    </div>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-green-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-green-500 mr-4"></i>
+                                <div>
+                                                                 <h3 class="text-lg font-bold text-primary font-medium">PYTHON PROGRAMMING FOR EVERY BEGINNERS</h3>
+                             <p class="text-secondary text-sm font-medium">Udemy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm font-medium mb-4">
+                            Complete Python programming course covering fundamentals to advanced concepts.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">COMPLETED</span>
+                                                    </div>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-purple-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-purple-500 mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-bold text-primary ">C PROGRAMMING BASICS</h3>
+                                    <p class="text-secondary text-sm ">Simplilearn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm  mb-4">
+                            Fundamental C programming concepts, syntax, and practical implementation.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs ">COMPLETED</span>
+                                                    </div>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-blue-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-blue-500 mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-bold text-primary ">HTML, CSS</h3>
+                                    <p class="text-secondary text-sm ">GreatLearning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm  mb-4">
+                            Web development fundamentals with HTML5 and CSS3 for modern web design.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs ">COMPLETED</span>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI/ML & Data Science -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-primary mb-12 ">AI/ML & DATA SCIENCE</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-highlight">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-highlight mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-bold text-primary ">MACHINE LEARNING FUNDAMENTALS</h3>
+                                    <p class="text-secondary text-sm ">Infosys Springboard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm  mb-4">
+                            Core machine learning concepts, algorithms, and practical applications in real-world scenarios.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-highlight text-white px-3 py-1 rounded-full text-xs ">COMPLETED</span>
+                                                    </div>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-accent">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-accent mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-bold text-primary ">DATA ANALYTICS JOB SIMULATION</h3>
+                                    <p class="text-secondary text-sm ">Deloitte</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm  mb-4">
+                            Real-world data analytics project simulation with industry-standard tools and methodologies.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-xs ">COMPLETED</span>
+                                                    </div>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-green-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-green-500 mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-bold text-primary ">GENAI POWERED DATA ANALYTICS JOB SIMULATION</h3>
+                                    <p class="text-secondary text-sm ">Forage</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm  mb-4">
+                            Advanced analytics using generative AI technologies for data-driven insights and decision making.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs ">COMPLETED</span>
+                                                    </div>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-6 card-hover border-l-4 border-purple-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-3xl text-purple-500 mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-bold text-primary ">INTRODUCTION TO MACHINE LEARNING</h3>
+                                    <p class="text-secondary text-sm ">Coursera</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm  mb-4">
+                            Fundamental concepts of machine learning, including supervised and unsupervised learning, algorithms, and practical applications.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs ">COMPLETED</span>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification Stats -->
+            <div class="bg-gradient-to-r from-primary to-secondary text-white rounded-xl p-8 text-center">
+                <h2 class="text-3xl font-bold mb-8 ">CERTIFICATION HIGHLIGHTS</h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">9</div>
+                        <p class="">Total Certifications</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">4</div>
+                        <p class="">Programming Languages</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">4</div>
+                        <p class="">AI/ML & Analytics</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">100%</div>
+                        <p class="">Completion Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="">&copy; 2024 SADINENI LAHARI. ALL RIGHTS RESERVED.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="mailto:laharichowdary022@gmail.com" class="hover:text-highlight transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="tel:+919701801778" class="hover:text-highlight transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sadineni-lahari22/" class="hover:text-highlight transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/Lahari2201" class="hover:text-highlight transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

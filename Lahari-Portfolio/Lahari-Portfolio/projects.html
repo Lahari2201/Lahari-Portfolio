@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sadineni Lahari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        secondary: '#34495E',
+                        accent: '#E74C3C',
+                        highlight: '#3498DB',
+                        light: '#ECF0F1',
+                        dark: '#2C3E50'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'display': ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #3498DB 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-primary font-display">LAHARI</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">HOME</a>
+                    <a href="education.html" class="text-gray-700 hover:text-accent transition-colors font-medium">EDUCATION</a>
+                    <a href="projects.html" class="text-accent font-medium">PROJECTS</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-accent transition-colors font-medium">SKILLS</a>
+                    <a href="certifications.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CERTIFICATIONS</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CONTACT</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">HOME</a>
+                    <a href="education.html" class="text-gray-700 hover:text-accent transition-colors font-medium">EDUCATION</a>
+                    <a href="projects.html" class="text-accent font-medium">PROJECTS</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-accent transition-colors font-medium">SKILLS</a>
+                    <a href="certifications.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CERTIFICATIONS</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="gradient-bg text-white pt-20 pb-16">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 font-display tracking-tight">
+                    PROJECTS
+                </h1>
+                <p class="text-xl text-light max-w-3xl mx-auto">
+                    Showcase of innovative projects demonstrating technical expertise and problem-solving capabilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-light rounded-xl overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-highlight to-blue-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold font-display">Smart PPE Compliance Checker</h3>
+                            <i class="fas fa-hard-hat text-3xl"></i>
+                        </div>
+                        <p class="text-light">AI • Computer Vision • Safety</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            An AI-based system designed to monitor and ensure safety compliance by detecting personal protective equipment (PPE) such as helmets and masks in real time.
+                        </p>
+                        
+                        <div class="flex gap-4">
+                            <a href="#" class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center">
+                                <i class="fab fa-github mr-2"></i>VIEW CODE
+                            </a>
+                            <a href="#" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>LIVE DEMO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-light rounded-xl overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-accent to-red-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold font-display">OpenIdeaX – AI-Powered Open Innovation Platform</h3>
+                            <i class="fas fa-lightbulb text-3xl"></i>
+                        </div>
+                        <p class="text-light">AI • Innovation • Collaboration</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            An AI-powered open innovation platform that enables users to submit, evaluate, and refine ideas collaboratively using intelligent analytics.
+                        </p>
+                        
+                        <div class="flex gap-4">
+                            <a href="#" class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center">
+                                <i class="fab fa-github mr-2"></i>VIEW CODE
+                            </a>
+                            <a href="#" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>LIVE DEMO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-light rounded-xl overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold font-display">AI-Based Plant Disease Recognition System</h3>
+                            <i class="fas fa-leaf text-3xl"></i>
+                        </div>
+                        <p class="text-light">Machine Learning • Agriculture • Computer Vision</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Developed a sophisticated machine learning model for image classification using convolutional neural networks. The system achieved 95% accuracy on test datasets and can classify plant disease images across multiple categories with high precision and recall.
+                        </p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">TECH STACK:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">OpenCV</span>
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">NumPy</span>
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Matplotlib</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">KEY FEATURES:</h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>95% classification accuracy</li>
+                                <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Real-time image processing</li>
+                                <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i>Multi-category classification</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <a href="#" class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center">
+                                <i class="fab fa-github mr-2"></i>VIEW CODE
+                            </a>
+                            <a href="#" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>LIVE DEMO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 SADINENI LAHARI. ALL RIGHTS RESERVED.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="mailto:laharichowdary022@gmail.com" class="hover:text-highlight transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="tel:+919701801778" class="hover:text-highlight transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sadineni-lahari22/" class="hover:text-highlight transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/Lahari2201" class="hover:text-highlight transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

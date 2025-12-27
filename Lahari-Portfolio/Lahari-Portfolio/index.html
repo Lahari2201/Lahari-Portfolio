@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadineni Lahari - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        secondary: '#34495E',
+                        accent: '#E74C3C',
+                        highlight: '#3498DB',
+                        light: '#ECF0F1',
+                        dark: '#2C3E50'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'display': ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #3498DB 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-primary font-display">LAHARI</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">HOME</a>
+                    <a href="education.html" class="text-gray-700 hover:text-accent transition-colors font-medium">EDUCATION</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-accent transition-colors font-medium">PROJECTS</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-accent transition-colors font-medium">SKILLS</a>
+                    <a href="certifications.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CERTIFICATIONS</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CONTACT</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">HOME</a>
+                    <a href="education.html" class="text-gray-700 hover:text-accent transition-colors font-medium">EDUCATION</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-accent transition-colors font-medium">PROJECTS</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-accent transition-colors font-medium">SKILLS</a>
+                    <a href="certifications.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CERTIFICATIONS</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-accent transition-colors font-medium">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-20 pb-16 min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <div class="mb-8">
+                    <div class="w-48 h-48 mx-auto bg-white rounded-full flex items-center justify-center mb-6 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer">
+                        <img src="lahari.jpg" alt="Sadineni Lahari" class="w-full h-full object-cover rounded-full">
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 font-display tracking-tight">
+                    SADINENI LAHARI
+                </h1>
+                <h2 class="text-2xl md:text-3xl text-highlight font-semibold mb-8">
+                    B.TECH IN ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+                </h2>
+                
+                <div class="max-w-4xl mx-auto mb-12">
+                    <p class="text-lg text-light leading-relaxed">
+                        Passionate about AI/ML, problem-solving, and emerging technologies like Blockchain & Web 3.0. 
+                        Dedicated to leveraging cutting-edge technologies to create innovative solutions that make a difference.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                    <a href="projects.html" class="bg-accent hover:bg-red-600 text-white px-10 py-4 rounded-lg font-semibold transition-colors text-lg">
+                        VIEW PROJECTS
+                    </a>
+                    <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-4 rounded-lg font-semibold transition-colors text-lg">
+                        CONTACT ME
+                    </a>
+                </div>
+
+                <!-- Quick Navigation Cards -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                    <a href="education.html" class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-xl card-hover border border-white border-opacity-20">
+                        <i class="fas fa-graduation-cap text-4xl text-highlight mb-4"></i>
+                        <h3 class="font-semibold text-white font-display text-lg">EDUCATION</h3>
+                        <p class="text-light text-sm mt-2">Academic Background</p>
+                    </a>
+                    <a href="skills.html" class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-xl card-hover border border-white border-opacity-20">
+                        <i class="fas fa-code text-4xl text-highlight mb-4"></i>
+                        <h3 class="font-semibold text-white font-display text-lg">SKILLS</h3>
+                        <p class="text-light text-sm mt-2">Technical Expertise</p>
+                    </a>
+                    <a href="certifications.html" class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-xl card-hover border border-white border-opacity-20">
+                        <i class="fas fa-certificate text-4xl text-highlight mb-4"></i>
+                        <h3 class="font-semibold text-white font-display text-lg">CERTIFICATIONS</h3>
+                        <p class="text-light text-sm mt-2">Professional Achievements</p>
+                    </a>
+                    <a href="contact.html" class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-xl card-hover border border-white border-opacity-20">
+                        <i class="fas fa-envelope text-4xl text-highlight mb-4"></i>
+                        <h3 class="font-semibold text-white font-display text-lg">CONTACT</h3>
+                        <p class="text-light text-sm mt-2">Get In Touch</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 SADINENI LAHARI. ALL RIGHTS RESERVED.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="mailto:laharichowdary022@gmail.com" class="hover:text-highlight transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="tel:+919701801778" class="hover:text-highlight transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sadineni-lahari22/" class="hover:text-highlight transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/Lahari2201" class="hover:text-highlight transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

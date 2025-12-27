@@ -47,7 +47,6 @@ A modern, responsive portfolio website showcasing the skills, projects, and achi
 - **Name**: Sadineni Lahari
 - **Title**: B.Tech in Artificial Intelligence & Machine Learning
 - **Email**: laharichowdary022@gmail.com
-- **Phone**: +91 9701801778
 - **Location**: LB Nagar
 
 ### Education
@@ -119,7 +118,6 @@ colors: {
 
 For any questions or customization requests, please contact:
 - **Email**: laharichowdary022@gmail.com
-- **Phone**: +91 9701801778
 
 ## 📄 License
 
